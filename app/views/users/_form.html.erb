@@ -17,8 +17,9 @@
   </div>
 
   <div class="field">
-    <%= f.label :avatar %>
-    <%= f.text_field :avatar %>
+    <%= f.label :avatar_data %>
+    <%= f.hidden_field :avatar, value: user.cached_avatar_data %>
+    <%= f.file_field :avatar %>
   </div>
 
   <div class="actions">
